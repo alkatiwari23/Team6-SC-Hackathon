@@ -1,3 +1,16 @@
+<?php
+include 'connection.php';
+/*
+        This Page is session protected as you can see the following code checks
+                whether there is any session variable known as name is set or not. 
+                    As If not set that means user have to login/register first 
+    */
+    if(isset($_SESSION["firstname"]))
+    {
+        header("Location: welcome.php");
+        die();
+    }
+ ?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -31,7 +44,7 @@
           </div>
         </div>
         <div class="col-12 col-sm last">
-          <form  action="login.php" method="POST" enctype="multipart/form-data">
+          <form  action="logincheck.php" method="POST" enctype="multipart/form-data">
             <div class="form-group row">
                 <label for="mail" class="required col-12 col-sm-3 col-md-3 col-form-label">Email</label>
                 <div class="col-sm-9 col-md-9">
@@ -71,13 +84,13 @@
                   <div class="form-group row">
                       <label for="phone" class=" required col-md-3 col-form-label">Contact Number</label>
                       <div class="col-md">
-                          <input type="tel" pattern="[7-9]{1}[0-9]{9}" minlength="10" maxlength="10" class="form-control" id="phone" name="phone" placeholder="Contact Number" required>
+                          <input type="number" pattern="[7-9]{1}[0-9]{9}" minlength="10" maxlength="10" class="form-control" id="phone" name="phone" placeholder="Contact Number" required>
                       </div>
                   </div>
                   <div class="form-group row">
-                    <label for="mail" class="required col-12 col-md-3 col-form-label">Email</label>
+                    <label for="email" class="required col-12 col-md-3 col-form-label">Email</label>
                     <div class="col-sm col-md">
-                        <input type="email" class="form-control" id="mail" name="mail" placeholder="Enter your email" required>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
                     </div>
                 </div>
                 <div class="form-group row">
