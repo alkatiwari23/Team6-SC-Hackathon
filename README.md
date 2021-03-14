@@ -1,4 +1,4 @@
-# Team6-SC-Hackathon
+# Standard Chartered Diversity Hackathon
 ## About Hackathon
 Standard chartered is creating a culture of equal opportunity and inclusion, where everyone is empowered regardless of their gender, so they’re taking numerous steps to better the balance within our organization. An inclusive culture is central to enabling the Diversity. At Standard Chartered, they believe fresh talented women who are enthusiastic about making their mark for themselves, are those who will play a role in defining the Future of Banking.
 
