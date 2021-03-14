@@ -1,7 +1,7 @@
 <?php
-$username = $_POST['username'];
+$username = $_POST['firstname'];
 $password = $_POST['password'];
-$email = $_POST['email'];
+$email = $_POST['mail'];
 $phone = $_POST['phone'];
 if (!empty($username) || !empty($password) || !empty($email) || !empty($phone)) {
  $host = "localhost";
