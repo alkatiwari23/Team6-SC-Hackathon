@@ -6,5 +6,5 @@ aXess Labs is the Technology Innovation stream within Standard Chartered, who is
 
 Early Careers and aXess Labs launching their very first external virtual Diversity Hackathon for fresh grads where the passionate coders will get an opportunity to join T&I India.
 
-##Theme- Women Budgeting App
+## Theme- Women Budgeting App
 Innovative apps/webpage for women to bring the investment opportunities at small capital amounts and to showcase the accumulated capital for specific goals in life e.g. Daughter's marriage, Family emergencies, etc.
