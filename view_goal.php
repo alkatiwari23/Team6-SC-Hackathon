@@ -44,7 +44,7 @@ $result = $conn->query($view_sql);
     if($e_bal<=$c_bal)
                 echo "<br>Yay!!! Your goal of ".$goalname." has been achieved.<br>You have ".($c_bal-$e_bal)." additional amount in your savings other than your target.";
     else{
-        echo "<br>Required Amount to complete the goal:  ".$reqd."<br> You have deposited your savings for ".floor($c_bal/$installment_amt). " months.<br>You can complete your target in ".ceil($reqd/$installment_amt). " months. All the best!!!";
+        echo "<br>Required Amount to complete the goal:  ".$reqd."<br> You have deposited your savings for ".($c_bal/$installment_amt). " months.<br>You can complete your target in ".($reqd/$installment_amt). " months. All the best!!!";
     }
 ?>
 </div>

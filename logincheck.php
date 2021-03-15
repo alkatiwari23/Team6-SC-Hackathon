@@ -42,7 +42,7 @@
                     <!-- alerting error using js -->
                     <script type="text/javascript">
                     alert('Email or password is wrong.');
-                    window.location.href='index.php
+                    window.location.href='index.php';
                     </script>
                 <?php }
             }

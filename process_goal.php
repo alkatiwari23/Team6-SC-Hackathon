@@ -36,10 +36,14 @@ if ($conn->query($sql_goal) === TRUE) {}
    
     echo "<h1>Your Goal- ".$goalname."</h1>";
     echo "<br>Target Amount :  ".$e_bal;
-    echo "<br>Installment Amount :  ".ceil($installment_amt);
+    echo "<br>Installment Amount :  ".$installment_amt;
     echo "<br>Total Months :  ". $months;
     echo "<br>Accumulated Capital :  ". $c_bal;
-    echo "<br>Required Amount to complete the goal:  ". ($e_bal-$c_bal);
+    if($e_bal<=$c_bal)
+                echo "<br>Yay!!! Your goal of ".$goalname." has been achieved.<br>You have ".($c_bal-$e_bal)." additional amount in your savings other than your target.";
+    else{
+        echo "<br>Required Amount to complete the goal:  ".$reqd."<br> You have deposited your savings for ".($c_bal/$installment_amt). " months.<br>You can complete your target in ".($reqd/$installment_amt). " months. All the best!!!";
+    }
     ?>
     <br>
 </div>
