@@ -26,6 +26,17 @@
         $conn = new mysqli($servername, $username, $password, $dbname);
         if ($conn->query($sql) === TRUE) {
         }
+    $sql1 = "CREATE TABLE crt_goals (
+        goal_id INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+        goalname VARCHAR(50) NOT NULL,
+        months VARCHAR(8),
+            c_bal VARCHAR(10),
+            e_bal VARCHAR(10),
+            username VARCHAR(50) NOT NULL,
+        goal_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+        )";
+            if ($conn->query($sql1) === TRUE) {
+            }
 ?>
 
 

@@ -44,7 +44,7 @@ include 'connection.php';
           </div>
         </div>
         <div class="col-12 col-sm last">
-          <form  action="logincheck.php" method="POST" enctype="multipart/form-data">
+          <form  action="logincheck.php" method="POST" enctype="multipart/form-data" data-aos="fade-up">
             <div class="form-group row">
                 <label for="mail" class="required col-12 col-sm-3 col-md-3 col-form-label">Email</label>
                 <div class="col-sm-9 col-md-9">
@@ -76,8 +76,8 @@ include 'connection.php';
                 <div class="modal-body">
                 <form action="insert.php" method="POST" enctype="multipart/form-data">
                   <div class="form-group row">
-                      <label for="firstname" class="required col-md-3 col-form-label"> Your Name</label>
-                      <div class="col-md">
+                      <label for="firstname" class="required col-md-3 col-form-label">Your Name</label>
+                      <div class="col">
                           <input type="text" class="form-control" id="firstname" name="firstname" placeholder="Your Name" required>
                       </div>
                   </div>

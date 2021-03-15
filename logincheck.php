@@ -9,13 +9,14 @@
                 $pass=$_POST["pass"];
                 //flag is the parameter used for checking whether user exist or not
                 $flag=0;
-                $sql = "SELECT id, username, email, password FROM register";
+                $sql = "SELECT id, username, email, password, phone FROM register";
                 $result = $conn->query($sql);
                 if ($result->num_rows > 0) {
                     while($row = $result->fetch_assoc()) {
                         $email2=$row["email"];
                         $pass2=$row["password"];
                         $name2=$row["username"];
+                        $phone=$row['phone'];
                         /*checks whether data entered by the user match to any data. 
                             If it do so then move to welcome.php
                         */
@@ -28,6 +29,8 @@
                                 which will be used at welcome.php to display the name of logged in user
                             */
                             $_SESSION['firstname']=$name2;
+                            $_SESSION['phone'] = $phone;
+                            $_SESSION['email'] = $email2;
                             //updating the flag
                             $flag=1;
                             die();
@@ -39,7 +42,7 @@
                     <!-- alerting error using js -->
                     <script type="text/javascript">
                     alert('Email or password is wrong.');
-                    window.location.href='index.html';
+                    window.location.href='index.php
                     </script>
                 <?php }
             }

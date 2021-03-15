@@ -20,6 +20,7 @@
     text-align: center;
     font-family: 'Roboto', sans-serif;
     padding-top: 50px;
+    
   }
   .jumbotron-text h1 {
     /*YOUR NAME*/
@@ -54,4 +55,7 @@
   .required:after {
     content:" *";
     color: red;
+  }
+  .margin{
+    padding-left: 100px;
   }

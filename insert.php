@@ -22,7 +22,7 @@
                         <!-- alerting error using js -->
                         <script type="text/javascript">
                             alert('User already exists with the same email');
-                            window.location.href='index.html';
+                            window.location.href='index.php;
                         </script>
                     <?php
                         // updating flag if user already exist 
@@ -41,11 +41,12 @@
                     setting session-parameter known as name,
                         which will be used at welcome.php to display the name of logged in user
                 */
-                $_SESSION['firstname'] = $username;
+                $_SESSION['firstname'] = $fname;
+                $_SESSION['phone'] = $phone;
+                $_SESSION['email'] = $email;
                 die();
             }
         }
-
 
     }
 ?>
